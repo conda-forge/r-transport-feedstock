@@ -1,4 +1,4 @@
-{% set version = "0.12-2" %}
+{% set version = "0.12-4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/transport_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/transport/transport_{{ version }}.tar.gz
-  sha256: ad33e795e492d2886cca21f05e8a1fb19bcbf212848dadf25907464e4b7d89b4
+  sha256: 5495ac669699f9f64ba9f9705baddd3ebc1f9e748617068c7dd494fd69d67973
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,8 +50,7 @@ test:
 about:
   home: http://www.dominic.schuhmacher.name
   license: GPL-2
-  summary: Solve optimal transport problems. Compute Wasserstein distances (a.k.a. Kantorovitch, Fortet--Mourier, Mallows, Earth Mover's, or minimal L_p distances),
-    return the corresponding transference plans, and display them graphically. Objects that can be compared include grey-scale images, (weighted) point patterns,
+  summary: Solve optimal transport problems. Compute Wasserstein distances (a.k.a. Kantorovitch, Fortet--Mourier, Mallows, Earth Mover's, or minimal L_p distances), return the corresponding transference plans, and display them graphically. Objects that can be compared include grey-scale images, (weighted) point patterns,
     and mass vectors.
   license_family: GPL2
   license_file:
