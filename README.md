@@ -8,7 +8,7 @@ About r-transport
 
 Home: http://www.dominic.schuhmacher.name
 
-Package license: GPL-2
+Package license: GPL-2.0-or-later
 
 Summary: Solve optimal transport problems. Compute Wasserstein distances (a.k.a. Kantorovitch, Fortet--Mourier, Mallows, Earth Mover's, or minimal L_p distances), return the corresponding transference plans, and display them graphically. Objects that can be compared include grey-scale images, (weighted) point patterns, and mass vectors.
 About r-transport
@@ -16,7 +16,7 @@ About r-transport
 
 Home: http://www.dominic.schuhmacher.name
 
-Package license: GPL-2
+Package license: GPL-2.0-or-later
 
 Summary: Solve optimal transport problems. Compute Wasserstein distances (a.k.a. Kantorovitch, Fortet--Mourier, Mallows, Earth Mover's, or minimal L_p distances), return the corresponding transference plans, and display them graphically. Objects that can be compared include grey-scale images, (weighted) point patterns, and mass vectors.
 
