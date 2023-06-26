@@ -1,4 +1,4 @@
-{% set version = "0.14-1" %}
+{% set version = "0.14-4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/transport_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/transport/transport_{{ version }}.tar.gz
-  sha256: 59f24499b9acc3680824edf6f7eba65c6c4c08198cb0236a2af9daf288a4a890
+  sha256: 3f1c388317c75423abd040efc0e307ab608b74ab5f80c635db9c7d23662ac849
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
