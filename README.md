@@ -3,6 +3,7 @@ About r-transport-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-transport-feedstock/blob/main/LICENSE.txt)
 
+
 About r-transport
 -----------------
 
@@ -11,6 +12,7 @@ Home: http://www.dominic.schuhmacher.name
 Package license: GPL-2.0-or-later
 
 Summary: Solve optimal transport problems. Compute Wasserstein distances (a.k.a. Kantorovitch, Fortet--Mourier, Mallows, Earth Mover's, or minimal L_p distances), return the corresponding transference plans, and display them graphically. Objects that can be compared include grey-scale images, (weighted) point patterns, and mass vectors.
+
 About r-transport
 -----------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
