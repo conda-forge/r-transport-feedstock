@@ -1,6 +1,5 @@
 {% set version = "0.15-2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-transport
@@ -13,8 +12,7 @@ source:
   sha256: 8a67e22e3b2ee7a10ce26c1212cba763a272bd4327f9082fa70a382cd4a7c05d
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,7 +38,6 @@ requirements:
     - r-data.table
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.12.10
     - r-rcppeigen
     - r-data.table
