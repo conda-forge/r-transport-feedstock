@@ -12,7 +12,7 @@ source:
   sha256: 4e9342f6fd65dc39c9dfed20cb0312d34899b9cb0648aa5a67516ce7711c20cf
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -31,6 +31,9 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
+    - r-rcpp >=0.12.10             # [build_platform != target_platform]
+    - r-rcppeigen                  # [build_platform != target_platform]
+    - r-data.table                 # [build_platform != target_platform]
   host:
     - r-base
     - r-rcpp >=0.12.10
@@ -52,7 +55,6 @@ about:
   license: GPL-2.0-or-later
   summary: Solve optimal transport problems. Compute Wasserstein distances (a.k.a. Kantorovitch, Fortet--Mourier, Mallows, Earth Mover's, or minimal L_p distances), return the corresponding transference plans, and display them graphically. Objects that can be compared include grey-scale images, (weighted) point patterns,
     and mass vectors.
-  license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
